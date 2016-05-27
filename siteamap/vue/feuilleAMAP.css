@@ -1,0 +1,173 @@
+	/* texte courant */
+	BODY, TD {
+	color : black;
+	font-family : arial;
+	font-size: medium;
+	text-align: left;
+background-image: url(./images/application/degradéduswagg.PNG); 
+background-position: center center;
+background-repeat: no-repeat; 
+background-attachment: fixed; 
+background-size: cover; 
+-moz-background-size: 100% 100%;     /* Gecko 1.9.2 (Firefox 3.6) */
+-o-background-size: 100% 100%;        /* Opera 9.5 */
+-webkit-background-size: 100% 100%;   /* Safari 3.0 */
+background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) > CSS3 */
+	margin-bottom:-20px;
+}
+
+H1 /* grand  tittre*/
+{
+	font-family : Arial;
+	font-size: 22;
+	color : purple;
+	text-align: center;
+}
+
+H2  /*titre moyen*/
+{
+	font-size: medium;
+	color: Navy;
+	text-align: center;
+	
+}
+
+h3 /*propositions*/
+{
+	font-size: small;
+	color: Black;
+}
+h4/* commentaires en noir*/
+{
+	font-size:small;
+	color: Black;
+}
+a img /* Toutes les images contenues dans un lien */
+	{
+ 	  border: none; /* Pas de bordure */
+	}
+	
+table /format d'une table
+{
+	width : 16cm;
+}
+
+
+th /* Les cellules d'en-tête du tableau*/
+	{
+	height: 2cm;
+	border: thin solid Blue;
+	font-family: serif;
+	text-align : left;
+	padding-left : 8px;
+	padding-right : 8px;
+	padding-bottom : 8px;
+	padding-top : 8px;
+}
+
+td /* Les cellules normales du tableau*/
+	{
+	font-family: serif;
+	text-align : center;
+	color : #282828;
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-bottom : 8px;
+	padding-top : 8px;
+	vertical-align : top;
+	border-top : thin solid black;
+	border-bottom : thin solid black;
+}
+
+td img
+{
+border: thin solid purple;
+}
+
+select /* zone de liste */
+{
+	color: white;
+	background-color : Purple;
+	width : 5cm;
+	font-weight : bold;
+	font-size : medium;
+}
+input 
+{
+	color: Black;
+}
+
+#Haut
+{	
+	margin:auto;	
+	text-align:center;
+	font-family: Arial, "Arial Black";
+    color: white;
+    font-size: 22
+}
+
+#logo
+{
+	height: 150px;
+	margin: left;
+	text-align: center center;
+	background-image: url(images/application/logoAMAP.jpg);
+	background-repeat : no-repeat;
+}
+
+#MenuHaut
+{	
+	list-style: none;
+	margin:0px 0px;
+	text-align: center;
+    font-family: Arial, "Arial Black";
+    color: white;
+    font-size: 22
+}
+#MenuHaut td
+{
+	display:inline;
+	border-style:solid;
+	list-style: none;
+	margin: 0px 0px;
+	border-width:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	background:url(images/application/bouton_menu_haut.gif) no-repeat;
+	width:131px;
+	height:28px;
+	float:left;
+	text-align:center;
+}
+
+#MenuHaut A:link 
+{
+	font-size : medium;
+	color : Purple;
+	font-style : normal;
+	font-weight : bolder;
+}
+#ConnexionHaut
+{
+margin-left:160px;
+height: 150px;
+position: absolute; 
+top: 100px; 
+left: 0px;
+
+
+
+}
+#Corps
+{
+	padding-top:30px;
+	height: 900px;
+}
+.entete
+{
+	font-family : Arial;
+	font-size: 30;
+	color : purple;
+}
