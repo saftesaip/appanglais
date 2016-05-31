@@ -7,7 +7,6 @@ if(!isset($_SESSION["idUtil"]))
 	include_once('vue/vue_menucompte.php');
 	
 	$adh=get_info_adh($_SESSION["idUtil"]);
-	echo("zouzou  ".$adh['idUtil']);
 
 	if (!isset($_GET['gestion']) OR $_GET['gestion'] == 'informations')
 	{
