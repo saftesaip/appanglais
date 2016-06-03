@@ -1,70 +1,14 @@
 <html>
     <head>
         <title>Fest'Esaip</title>
-        <style>
-            
-            body {
-                background-image: url('wallpaper.png');
-            }   
-            
-            div {
-                text-align : center;
-                background-color: #000000;
-                opacity: 0.70;
-                filter: alpha(opacity=70);
-            }
-            
-            div a {
-                text-decoration: none;
-                color: white;
-                font-size: 20px;
-                padding: 15px ;
-                display:inline-block;
-            }
-            
-            ul {
-              display: inline;
-              margin: 0;
-              padding: 0;
-            }
-            
-            ul li {
-                display: inline-block;
-            }
-            
-            ul li:hover {
-                background: goldenrod;
-                
-            }
-            
-            
-            ul li:hover ul {
-                display: block;
-            }
-            
-            ul li ul {
-              position: absolute;
-              width: 200px;
-              display: none;
-            }
-            
-            ul li ul li { 
-              background: #555; 
-              display: block; 
-            }
-            
-            ul li ul li a {
-                display:block !important;
-            } 
-            ul li ul li:hover {
-                background: #666;
-            }
-        </style>
+        <link rel="stylesheet" href="modele/style.css" />
         
     </head>
     <body>
         <header>
-            <div>
+            <!-- Ajouter logo + nom festival -->
+            
+            <div id='menu'>
                 <ul>
                     <li>
                         <a href="">Accueil</a>						
