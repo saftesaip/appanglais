@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 03 Juin 2016 à 16:32
+-- Généré le :  Mar 14 Juin 2016 à 14:16
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -54,7 +54,15 @@ CREATE TABLE IF NOT EXISTS `concert` (
   `HDebConcert` datetime NOT NULL,
   `HFinConcert` datetime NOT NULL,
   PRIMARY KEY (`IDConcert`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Contenu de la table `concert`
+--
+
+INSERT INTO `concert` (`IDConcert`, `IDArtiste`, `IDScene`, `HDebConcert`, `HFinConcert`) VALUES
+(1, 1, 1, '2016-06-03 17:30:00', '2016-06-03 19:00:00'),
+(3, 2, 1, '2016-06-08 19:00:00', '2016-06-08 22:30:00');
 
 -- --------------------------------------------------------
 
