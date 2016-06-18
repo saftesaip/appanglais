@@ -1,0 +1,158 @@
+/*
+    @author Antoine BARBIN
+    @source w3schools.com + un ancien projet
+    le 08/06/2016
+*/
+
+/* Style de la page */
+html { 
+    margin:0;
+    padding:0;
+    background: url(images/wallpaper.png) no-repeat center fixed; 
+    background-size: cover; /* version standardisée */
+    font-family: Arial;
+} 
+
+/* style header */
+#header {
+    position : relative;
+    background:rgba(0,0,0,0.6);
+    text-align: center;
+	margin:auto;
+    padding : 20px 0 0 0;
+	width : 800px;
+    
+}
+
+div #titre{
+    color : goldenrod;
+    font-size: 0.9em;
+    
+}
+            
+/* Style menu */
+div #menu{
+    margin-left: auto;
+    margin-right: auto;
+    background:rgba(0,0,0,0.7);
+    text-align : center;
+    position : relative;
+    z-index: 1000;
+	width : 800px;
+}
+            
+div a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px ;
+    display:inline-block;
+}
+            
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+            
+ul li {
+    display: inline-block;
+}
+            
+ul li:hover, ul li:active {
+    background: goldenrod;
+    height : 3px;
+}
+            
+ul li:hover ul {
+    display: block;
+}
+            
+ul li ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+            
+ul li ul li { 
+    background:rgb(30,30,30);
+    display: block;
+}
+            
+ul li ul li a {
+   display:block !important;
+} 
+
+ul li ul li:hover {
+    background: goldenrod;
+    height: 100%;
+}
+
+
+/* page centrale */
+.articlePrincipal{
+    position : relative;
+    background-color: #000000;
+    opacity: 0.80;
+    filter: alpha(opacity=80);
+    text-align: left;
+	margin:auto;
+    padding : 20px;
+    position : relative;
+	width : 760px;
+}
+
+.articlePrincipal h1 {
+    font-size : 20px;
+    color : whitesmoke;
+	width : 760px;
+}
+
+.article{
+    color : whitesmoke;
+    padding : auto;
+    text-align: justify;
+	width : 760px;
+}
+
+
+/** Footer 
+    @source : stackoverflow
+    @author : Kaczynski Thibaut 
+**/
+
+#Footer {
+  position: relative;
+  text-align: center;
+	margin: 30px auto;
+  width : 800px;
+}
+#Footer H1 {
+  font-size: 3em;
+  color: goldenrod;
+  margin:0;
+  padding:0;
+}
+#Footer H2 {
+  font-size: 1.5em;
+  text-align : center ;
+  color: goldenrod;
+  margin:0;
+  padding:0;
+}
+#Footer .Background {
+  background: #010000;
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.60;
+  opacity: 0.6;
+  zoom: 1;
+	width : 800px;
+}
+#Footer .Background * {
+  visibility: hidden; /* hide the faded text*/
+}
+#Footer .Foreground {
+  position: absolute; /* position on top of the background div*/
+  left: 0;
+  top: 0;
+}

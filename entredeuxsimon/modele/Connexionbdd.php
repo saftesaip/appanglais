@@ -1,7 +1,9 @@
 
 <?php
-
-// Connexion à la base de données bddArtotheque
+/**
+*Connexion à la base de données*
+*Author : Simon*
+**/
 try
 {
     $bdd = new PDO('mysql:host=localhost;dbname=festesaip', 'root', '');

@@ -1,10 +1,19 @@
+<head>
+	<link rel="stylesheet" href="vue/style.css" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
 <?php
+/**
+*La gestion des differentes pages*
+*Author : Simon, antoine*
+**/
 
 session_start();
 
 include_once('modele/connexionbdd.php');
-include_once('modele/FonctionsJS.js');
-if (!isset($_GET['section']) OR $_GET['section'] == 'index')
+include_once("vue/vue_header.php");
+
+if (!isset($_GET['section']) OR $_GET['section'] == 'accueil')
 {
     include_once('controleur/accueil.php');
 }
@@ -63,4 +72,6 @@ elseif ($_GET['section'] == 'connexionReussie')
 {  	
 	include_once('controleur/connexionReussie.php');
 }
+
+include_once("vue/vue_footer.php");
 ?>
