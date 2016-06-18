@@ -1,6 +1,5 @@
 <head>
 	<link rel="stylesheet" href="vue/style.css" />
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
 <?php
 /**
@@ -45,9 +44,9 @@ elseif ($_GET['section'] == 'Camping')
 {  
 	include_once('controleur/Camping.php');
 }
-elseif ($_GET['section'] == 'Accessibilité')
+elseif ($_GET['section'] == 'Accessibilite')
 {  
-	include_once('controleur/Accessibilité.php');
+	include_once('controleur/Accessibilite.php');
 }
 elseif ($_GET['section'] == 'Venir')
 {  
