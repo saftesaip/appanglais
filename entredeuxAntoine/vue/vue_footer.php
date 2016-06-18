@@ -1,8 +1,11 @@
+<!--
+/*
+    @author Thibaut Kaczinsky
+    @source  un ancien projet
+    le 08/06/2016
+*/
+-->
 <html>
-    <head>
-        <link rel="stylesheet" href="modele/style.css" />
-        
-    </head>
     <body>
         <footer>          
             <div id="Footer">

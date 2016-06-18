@@ -1,4 +1,4 @@
-/*
+﻿/*
     @author Antoine BARBIN
     @source w3schools.com + un ancien projet
     le 08/06/2016
@@ -8,7 +8,7 @@
 html { 
     margin:0;
     padding:0;
-    background: url(wallpaper.png) no-repeat center fixed; 
+    background: url(images/wallpaper.png) no-repeat center fixed; 
     background-size: cover; /* version standardisée */
     font-family: Arial;
 } 
@@ -18,8 +18,9 @@ html {
     position : relative;
     background:rgba(0,0,0,0.6);
     text-align: center;
-    margin : -30px 100px;
+    margin:0 auto;
     padding : 20px 0 0 0;
+    width : 800px;
     
 }
 
@@ -30,13 +31,14 @@ div #titre{
 }
             
 /* Style menu */
-#menu {
+#menu{
     margin-left: auto;
     margin-right: auto;
     background:rgba(0,0,0,0.7);
     text-align : center;
     position : relative;
     z-index: 1000;
+	width : 800px;
 }
             
 #menu a {
@@ -94,81 +96,119 @@ div #titre{
     opacity: 0.80;
     filter: alpha(opacity=80);
     text-align: left;
-    margin : 50px 100px;
+    
+    margin : 0 auto ;
     padding : 20px;
     position : relative;
+    width : 760px;
+    z-index: -1;
 }
 
 .articlePrincipal h1 {
     font-size : 20px;
     color : whitesmoke;
+	width : 760px;
 }
 
 .article{
     color : whitesmoke;
     padding : auto;
     text-align: justify;
+	width : 760px;
 }
 
 
-
-/** Footer 
+/** 
+    Footer 
     @source : stackoverflow
     @author : Kaczynski Thibaut 
 **/
 
 #Footer {
-  position: relative;
-  text-align: center;
-  margin : 50px 100px;
-}
-#Footer H1 {
-  font-size: 3em;
-  color: goldenrod;
-  margin:0;
-  padding:0;
-}
-#Footer H2 {
-  font-size: 1.5em;
-  text-align : center ;
-  color: goldenrod;
-  margin:0;
-  padding:0;
-}
-#Footer .Background {
-  background: #010000;
-  filter: alpha(opacity=60);
-  -moz-opacity: 0.60;
-  opacity: 0.6;
-  zoom: 1;
-}
-#Footer .Background * {
-  visibility: hidden; /* hide the faded text*/
-}
-#Footer .Foreground {
-  position: absolute; /* position on top of the background div*/
-  left: 0;
-  top: 0;
+    position: relative;
+    text-align: center;
+    margin: 30px auto;
+    width : 800px;
 }
 
-/* Banniere logo artistes */
+#Footer H1 {
+    font-size: 3em;
+    color: goldenrod;
+    margin:0;
+    padding-top : 20px;
+    padding-left : 10px;
+}
+
+#Footer H2 {
+    font-size: 1.5em;
+    text-align : center ;
+    color: goldenrod;
+    margin:0;
+    padding:10px;
+}
+
+#Footer .Background {
+    background: #010000;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.60;
+    opacity: 0.6;
+    zoom: 1;
+    width : 800px;
+}
+
+#Footer .Background * {
+    visibility: hidden; /* hide the faded text*/
+}
+
+#Footer .Foreground {
+    position: absolute; /* position on top of the background div*/
+    left: 0;
+    top: 0;
+}
+
+
+/* 
+    Banniere logo sponsors 
+*/
 .slideshow-sponsor {
-   width: 650px;
-   height: 100px;
-   overflow: hidden;
-   margin : 20px auto;
+    width: 650px;
+    height: 100px;
+    overflow: hidden;
+    margin : 20px auto;
 }
 
 .slideshow-sponsor ul {
-    /* 5 images donc 5 x 100% */
-   width: 500%;
-   height: 200px;
-   padding:0px;
-   margin:0px;
-   list-style: none;
+    width: 500%;
+    height: 200px;
+    padding:0px;
+    margin:0px;
+    list-style: none;
 }
 .slideshow-sponsor li {
-   float:left;
-   margin-right:15px;
-   margin-left:15px;
+    float:left;
+    margin-right:15px;
+    margin-left:15px;
+}
+
+/*
+    Banniere logo artistes
+*/
+.slideshow-artiste {    
+    width: 800px;
+    height: 200px;
+    overflow: hidden;
+    margin : auto;
+}
+
+.slideshow-artiste ul {
+    /* 5 images donc 5 x 100% */
+    width: 500%;
+    height: 150px;
+    padding:0px;
+    margin:20px;
+    list-style: none;
+}
+.slideshow-artiste li {
+    float:left;
+    margin : 0 10px;    
 }

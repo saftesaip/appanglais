@@ -73,12 +73,12 @@
                         <li>
                             <a href="">S'inscrire / Tickets</a>
                         </li>
-                        <li>
+                        </ul>
                             <?php
 							include_once("vue/vue_connexion.php");
 							?>
-                        </li>
-                    </ul>
+                        
+                    
                 </div>
             </div>
         </header>

@@ -32,13 +32,13 @@
                             <a href="#">Fest'Esaip</a>
                                 <ul>
                                     <li>
-                                        <a href="index.php?section=historique">Historique</a>
+                                        <a href="index.php?section=Historique">Historique</a>
                                     </li>
                                     <li>
-                                        <a href="">Équipes / Contact</a>
+                                        <a href="index.php?section=EquipesContact">Équipes / Contact</a>
                                     </li>
                                     <li>
-                                        <a href="">Sponsors</a>
+                                        <a href="index.php?section=Sponsors">Sponsors</a>
                                     </li>
                                 </ul>
                         </li>				
@@ -46,13 +46,13 @@
                             <a href="#">Programmation</a>
                                 <ul>
                                     <li>
-                                        <a href="">Animations</a>
+                                        <a href="index.php?section=Animations">Animations</a>
                                     </li>
                                     <li>
-                                        <a href="">Stands</a>
+                                        <a href="index.php?section=Stands">Stands</a>
                                     </li>
                                     <li>
-                                        <a href="">Concerts</a>
+                                        <a href="index.php?section=Concerts">Concerts</a>
                                     </li>
                                 </ul>
                         </li>
@@ -60,13 +60,13 @@
                             <a href="#">Infos pratiques</a>
                             <ul>
                                 <li>
-                                    <a href="">Camping</a>
+                                    <a href="index.php?section=Camping">Camping</a>
                                 </li>
                                 <li>
-                                    <a href="">Accessbilité</a>
+                                    <a href="index.php?section=Accessibilité">Accessbilité</a>
                                 </li>
                                 <li>
-                                    <a href="">Venir au Fest'Esaip</a>
+                                    <a href="index.php?section=Venir">Venir au Fest'Esaip</a>
                                 </li>
                             </ul>
                         </li>
@@ -74,7 +74,7 @@
                             <a href="">S'inscrire / Tickets</a>
                         </li>
                         <li>
-                            <a href="">Connexion</a>                            
+                            <a href="">Connexion</a>
                             <a href="">Déonnexion</a>
                         </li>
                     </ul>
