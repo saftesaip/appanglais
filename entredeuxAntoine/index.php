@@ -11,6 +11,7 @@
     if (!isset($_GET['section']) OR $_GET['section'] == 'accueil')
 {
     include_once('controler/accueil.php');
+    include_once('view/banniereSponsors.php'); 
 }
     include("view/footer.php");
 ?>

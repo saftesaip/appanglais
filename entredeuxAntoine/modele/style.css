@@ -30,7 +30,7 @@ div #titre{
 }
             
 /* Style menu */
-div #menu{
+#menu {
     margin-left: auto;
     margin-right: auto;
     background:rgba(0,0,0,0.7);
@@ -39,7 +39,7 @@ div #menu{
     z-index: 1000;
 }
             
-div a {
+#menu a {
     text-decoration: none;
     color: white;
     font-size: 15px;
@@ -47,41 +47,41 @@ div a {
     display:inline-block;
 }
             
-ul {
+#menu ul {
     display: inline;
     margin: 0;
     padding: 0;
 }
             
-ul li {
+#menu ul li {
     display: inline-block;
 }
             
-ul li:hover, ul li:active {
+#menu ul li:hover, ul li:active {
     background: goldenrod;
     height : 3px;
 }
             
-ul li:hover ul {
+#menu ul li:hover ul {
     display: block;
 }
             
-ul li ul {
+#menu ul li ul {
     position: absolute;
     width: 200px;
     display: none;
 }
             
-ul li ul li { 
+#menu ul li ul li { 
     background:rgb(30,30,30);
     display: block;
 }
             
-ul li ul li a {
+#menu ul li ul li a {
    display:block !important;
 } 
 
-ul li ul li:hover {
+#menu ul li ul li:hover {
     background: goldenrod;
     height: 100%;
 }
@@ -111,6 +111,7 @@ ul li ul li:hover {
 }
 
 
+
 /** Footer 
     @source : stackoverflow
     @author : Kaczynski Thibaut 
@@ -119,7 +120,7 @@ ul li ul li:hover {
 #Footer {
   position: relative;
   text-align: center;
-  margin : -30px 100px;
+  margin : 50px 100px;
 }
 #Footer H1 {
   font-size: 3em;
@@ -148,4 +149,26 @@ ul li ul li:hover {
   position: absolute; /* position on top of the background div*/
   left: 0;
   top: 0;
+}
+
+/* Banniere logo artistes */
+.slideshow-sponsor {
+   width: 650px;
+   height: 100px;
+   overflow: hidden;
+   margin : 20px auto;
+}
+
+.slideshow-sponsor ul {
+    /* 5 images donc 5 x 100% */
+   width: 500%;
+   height: 200px;
+   padding:0px;
+   margin:0px;
+   list-style: none;
+}
+.slideshow-sponsor li {
+   float:left;
+   margin-right:15px;
+   margin-left:15px;
 }
