@@ -1,8 +1,10 @@
+<?php
+//@thibautkaczynski
 function get_concerts()
 {
     global $bdd;
            
-    $req = $bdd->prepare("select NomArt,ImageArt,HDebConcert,HFinConcert from concert,artiste where concert.IDArtiste=artiste.IDArt ");
+    $req = $bdd->prepare("SELECT * FROM concert,artiste where concert.IDArtiste=artiste.IDArt ");
 	$req->execute();
     $concerts = $req->fetchAll();
         
