@@ -4,7 +4,7 @@
 	  
 		<TABLE align='center'>
 			<?php
-				//affichage des paniers
+				//@thibautkaczynski
 				$i=-1;
 				foreach($concerts as $concert)
 				{	
