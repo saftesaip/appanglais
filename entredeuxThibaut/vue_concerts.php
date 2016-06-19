@@ -1,5 +1,6 @@
+
 <div id= 'Corps'>
-		<BR/> <H1>Les paniers : </H1><BR/>    
+		<BR/> <H1>Les concerts : </H1><BR/>    
 	  
 		<TABLE align='center'>
 			<?php
@@ -8,15 +9,15 @@
 				foreach($concerts as $concert)
 				{	
 					$i=$i+1;
-					$wnom=$concert['NomArt'];
-					$wimage=$panier['ImageArt'];
-					$wHDeb=$panier['HDebConcert'];
-					$wHFin=$panier['HFinConcert'];
+					$wnom=$concert['IDArtiste'];
+					
+					$wHDeb=$concert['HDebConcert'];
+					$wHFin=$concert['HFinConcert'];
 					if($i%3 == 0)
 					{
 						echo "<TR>";
 					}
-					echo"<TD>".$wnom."  ".$wimage."</BR><a href=index.php?section=detailpanier&idpanier=".$wHDeb."><IMG  src=vue/images/".$wHFin."></a></TD>";
+					echo"<TD>".$wnom." </TD>";
 					if($i%3 == 2)
 					{
 						echo "</TR>";
