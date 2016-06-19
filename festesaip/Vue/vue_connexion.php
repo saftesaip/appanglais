@@ -1,8 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<link rel="stylesheet" href="vue/style.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Formulaire de connexion en Ajax avec JQuery et PHP</title>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script type="text/javascript">
@@ -35,26 +35,13 @@ $(document).ready( function () {
 
 <body>
 	<div id="connexion"> <!-- bloc contenant le formulaire -->
-		<form name="connexionForm" id="connexionForm" action="#"><!-- début du formulaire de connexion -->
-	    	<fieldset>
-			<legend>Connexion</legend><!-- titre du formulaire -->
-		    <p>		    
+		<form name="connexionForm" id="connexionForm" action="#"><!-- début du formulaire de connexion -->	    
 			<span id="erreur"></span><!-- span qui contiendra les éventuels messages d'erreur -->
-		    </p>
-		    <p>
 			<label for="login">Nom d'utilisateur :</label>
 		    	<input type="text" name="login" id="login" /><!-- champ pour le login -->
-		    </p>
-		    
-		    <p>
 		    	<label for="pass">Mot de passe :</label>
 		    	<input type="password" name="pass" id="pass" /><!-- champ pour le mot de passe -->
-		    </p>
-		    
-		    <p class="center">
 		    	<input type="submit" value="Je me connecte" class="bouton" /><!-- bouton de connexion -->
-		    </p>
-		</fieldset>
 	    </form><!-- fin du formulaire -->
 	</div><!-- fin du bloc contenant le formulaire -->
 

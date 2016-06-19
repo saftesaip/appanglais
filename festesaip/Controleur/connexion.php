@@ -1,12 +1,11 @@
 <?php
-	include_once("modele/mod_connexion.php");
+	include_once("../modele/mod_connexion.php");
 	$log=$_POST["login"];
 	$pas=$_POST["pass"];
-	$util=get_utilisateurs($log, $pas);
+	$util=get_util($log, $pas);
 	if($util['LogUtil'] != null)
 	{
-		$_SESSION['iDUtil']=$Adh['IDUtil'];
-		$_SESSION['LogUtil']=$Adh['LogUtil'];
+		$_SESSION['LogUtil']=$util['LogUtil'];
 		echo "1"; // on 'retourne' la valeur 1 au javascript si la connexion est bonne
 	}
 	else 

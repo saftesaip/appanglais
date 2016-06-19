@@ -1,4 +1,4 @@
-/*
+﻿/*
     @author Antoine BARBIN
     @source w3schools.com + un ancien projet
     le 08/06/2016
@@ -18,9 +18,9 @@ html {
     position : relative;
     background:rgba(0,0,0,0.6);
     text-align: center;
-	margin:auto;
+    margin:0 auto;
     padding : 20px 0 0 0;
-	width : 800px;
+    width : 800px;
     
 }
 
@@ -31,7 +31,7 @@ div #titre{
 }
             
 /* Style menu */
-div #menu{
+#menu{
     margin-left: auto;
     margin-right: auto;
     background:rgba(0,0,0,0.7);
@@ -41,7 +41,7 @@ div #menu{
 	width : 800px;
 }
             
-div a {
+#menu a {
     text-decoration: none;
     color: white;
     font-size: 15px;
@@ -49,41 +49,41 @@ div a {
     display:inline-block;
 }
             
-ul {
+#menu ul {
     display: inline;
     margin: 0;
     padding: 0;
 }
             
-ul li {
+#menu ul li {
     display: inline-block;
 }
             
-ul li:hover, ul li:active {
+#menu ul li:hover, ul li:active {
     background: goldenrod;
     height : 3px;
 }
             
-ul li:hover ul {
+#menu ul li:hover ul {
     display: block;
 }
             
-ul li ul {
+#menu ul li ul {
     position: absolute;
     width: 200px;
     display: none;
 }
             
-ul li ul li { 
+#menu ul li ul li { 
     background:rgb(30,30,30);
     display: block;
 }
             
-ul li ul li a {
+#menu ul li ul li a {
    display:block !important;
 } 
 
-ul li ul li:hover {
+#menu ul li ul li:hover {
     background: goldenrod;
     height: 100%;
 }
@@ -96,10 +96,12 @@ ul li ul li:hover {
     opacity: 0.80;
     filter: alpha(opacity=80);
     text-align: left;
-	margin:auto;
+    
+    margin : 0 auto ;
     padding : 20px;
     position : relative;
-	width : 760px;
+    width : 760px;
+    z-index: -1;
 }
 
 .articlePrincipal h1 {
@@ -116,43 +118,97 @@ ul li ul li:hover {
 }
 
 
-/** Footer 
+/** 
+    Footer 
     @source : stackoverflow
     @author : Kaczynski Thibaut 
 **/
 
 #Footer {
-  position: relative;
-  text-align: center;
-	margin: 30px auto;
-  width : 800px;
+    position: relative;
+    text-align: center;
+    margin: 30px auto;
+    width : 800px;
 }
+
 #Footer H1 {
-  font-size: 3em;
-  color: goldenrod;
-  margin:0;
-  padding:0;
+    font-size: 3em;
+    color: goldenrod;
+    margin:0;
+    padding-top : 20px;
+    padding-left : 10px;
 }
+
 #Footer H2 {
-  font-size: 1.5em;
-  text-align : center ;
-  color: goldenrod;
-  margin:0;
-  padding:0;
+    font-size: 1.5em;
+    text-align : center ;
+    color: goldenrod;
+    margin:0;
+    padding:10px;
 }
+
 #Footer .Background {
-  background: #010000;
-  filter: alpha(opacity=60);
-  -moz-opacity: 0.60;
-  opacity: 0.6;
-  zoom: 1;
-	width : 800px;
+    background: #010000;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.60;
+    opacity: 0.6;
+    zoom: 1;
+    width : 800px;
 }
+
 #Footer .Background * {
-  visibility: hidden; /* hide the faded text*/
+    visibility: hidden; /* hide the faded text*/
 }
+
 #Footer .Foreground {
-  position: absolute; /* position on top of the background div*/
-  left: 0;
-  top: 0;
+    position: absolute; /* position on top of the background div*/
+    left: 0;
+    top: 0;
+}
+
+
+/* 
+    Banniere logo sponsors 
+*/
+.slideshow-sponsor {
+    width: 650px;
+    height: 100px;
+    overflow: hidden;
+    margin : 20px auto;
+}
+
+.slideshow-sponsor ul {
+    width: 500%;
+    height: 200px;
+    padding:0px;
+    margin:0px;
+    list-style: none;
+}
+.slideshow-sponsor li {
+    float:left;
+    margin-right:15px;
+    margin-left:15px;
+}
+
+/*
+    Banniere logo artistes
+*/
+.slideshow-artiste {    
+    width: 800px;
+    height: 200px;
+    overflow: hidden;
+    margin : auto;
+}
+
+.slideshow-artiste ul {
+    /* 5 images donc 5 x 100% */
+    width: 500%;
+    height: 150px;
+    padding:0px;
+    margin:20px;
+    list-style: none;
+}
+.slideshow-artiste li {
+    float:left;
+    margin : 0 10px;    
 }
