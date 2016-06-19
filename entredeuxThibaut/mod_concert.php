@@ -7,4 +7,5 @@ function get_concerts()
     $concerts = $req->fetchAll();
         
     return $concerts;
+}
 	
