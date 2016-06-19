@@ -19,8 +19,9 @@ html {
     background:rgba(0,0,0,0.6);
     text-align: center;
 	margin:auto;
-    padding : 20px 0 0 0;
+    padding : 20px 0 0;
 	width : 800px;
+	color : white;
     
 }
 
@@ -39,6 +40,7 @@ div #menu{
     position : relative;
     z-index: 1000;
 	width : 800px;
+	padding : 0 0 5px 0;
 }
             
 div a {
@@ -96,6 +98,7 @@ ul li ul li:hover {
     opacity: 0.80;
     filter: alpha(opacity=80);
     text-align: left;
+    color : whitesmoke;
 	margin:auto;
     padding : 20px;
     position : relative;

@@ -13,8 +13,8 @@ $(document).ready( function () {
 		   url: "Controleur/connexion.php",
 		   data: "login="+$("#login").val()+"&pass="+$("#pass").val(),
 		   success: function(msg){
-				console.log(msg);
-				if(msg==1) // si la connexion en php a fonctionnée
+				//console.log(msg);
+				if((msg==1) || (sessionId!=0) // si la connexion en php a fonctionnée
 				{
 					$("div#connexion").html("<span id=\"confirmMsg\">Vous &ecirc;tes maintenant connect&eacute;.</span>");
 					// on désactive l'affichage du formulaire et on affiche un message de bienvenue à la place

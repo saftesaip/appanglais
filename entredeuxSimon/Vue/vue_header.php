@@ -9,7 +9,7 @@
 <html>
     <head>
         <title>Fest'Esaip</title>
-        <link rel="stylesheet" href="modele/style.css" />
+        <link rel="stylesheet" href="vue/style.css" />
         
     </head>
     <body>
@@ -63,7 +63,7 @@
                                     <a href="index.php?section=Camping">Camping</a>
                                 </li>
                                 <li>
-                                    <a href="index.php?section=Accessibilité">Accessbilité</a>
+                                    <a href="index.php?section=Accessibilite">Accessibilité</a>
                                 </li>
                                 <li>
                                     <a href="index.php?section=Venir">Venir au Fest'Esaip</a>
@@ -73,12 +73,10 @@
                         <li>
                             <a href="">S'inscrire / Tickets</a>
                         </li>
-                        <li>
-                            <?php
+                    </ul>
+					                            <?php
 							include_once("vue/vue_connexion.php");
 							?>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </header>

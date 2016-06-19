@@ -4,14 +4,13 @@
 	$pas=$_POST["pass"];
 	$util=get_utilisateurs($log, $pas);
 	
-	if($util['LogUtil'] != null)
+	if($util['LogUtil']==$log)
 	{
-		$_SESSION['IDUtil']=$Adh['IDUtil'];
-		$_SESSION['LogUtil']=$Adh['LogUtil'];
+		$_SESSION['LogUtil']=$util['LogUtil'];
 		echo "1"; // on 'retourne' la valeur 1 au javascript si la connexion est bonne
 	}
 	else 
 	{
-		echo "1"; // on 'retourne' la valeur 0 au javascript si la connexion n'est pas bonne
+		echo "0"; // on 'retourne' la valeur 0 au javascript si la connexion n'est pas bonne
 	}
 ?>
