@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.2
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Sam 18 Juin 2016 à 20:29
--- Version du serveur :  5.7.9
--- Version de PHP :  5.6.16
+-- Généré le :  Dim 19 Juin 2016 à 23:42
+-- Version du serveur :  5.6.17
+-- Version de PHP :  5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Base de données :  `festesaip`
@@ -26,13 +26,12 @@ SET time_zone = "+00:00";
 -- Structure de la table `artiste`
 --
 
-DROP TABLE IF EXISTS `artiste`;
 CREATE TABLE IF NOT EXISTS `artiste` (
   `IDArt` int(11) NOT NULL AUTO_INCREMENT,
   `NomArt` varchar(40) NOT NULL,
   `ImageArt` varchar(40) NOT NULL,
   PRIMARY KEY (`IDArt`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Contenu de la table `artiste`
@@ -56,7 +55,6 @@ INSERT INTO `artiste` (`IDArt`, `NomArt`, `ImageArt`) VALUES
 -- Structure de la table `concert`
 --
 
-DROP TABLE IF EXISTS `concert`;
 CREATE TABLE IF NOT EXISTS `concert` (
   `IDConcert` int(11) NOT NULL AUTO_INCREMENT,
   `IDArtiste` int(11) NOT NULL,
@@ -64,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `concert` (
   `HDebConcert` datetime NOT NULL,
   `HFinConcert` datetime NOT NULL,
   PRIMARY KEY (`IDConcert`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Contenu de la table `concert`
@@ -80,13 +78,12 @@ INSERT INTO `concert` (`IDConcert`, `IDArtiste`, `IDScene`, `HDebConcert`, `HFin
 -- Structure de la table `scene`
 --
 
-DROP TABLE IF EXISTS `scene`;
 CREATE TABLE IF NOT EXISTS `scene` (
   `IDScene` int(11) NOT NULL AUTO_INCREMENT,
   `NomScene` varchar(30) NOT NULL,
   `DescScene` text NOT NULL,
   PRIMARY KEY (`IDScene`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Contenu de la table `scene`
@@ -102,14 +99,13 @@ INSERT INTO `scene` (`IDScene`, `NomScene`, `DescScene`) VALUES
 -- Structure de la table `sponsor`
 --
 
-DROP TABLE IF EXISTS `sponsor`;
 CREATE TABLE IF NOT EXISTS `sponsor` (
   `IDSponsor` int(11) NOT NULL AUTO_INCREMENT,
   `NomSponsor` varchar(40) NOT NULL,
   `ImgSponsor` varchar(40) NOT NULL,
   `LienSponsor` varchar(40) NOT NULL,
   PRIMARY KEY (`IDSponsor`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Contenu de la table `sponsor`
@@ -130,7 +126,6 @@ INSERT INTO `sponsor` (`IDSponsor`, `NomSponsor`, `ImgSponsor`, `LienSponsor`) V
 -- Structure de la table `utilisateur`
 --
 
-DROP TABLE IF EXISTS `utilisateur`;
 CREATE TABLE IF NOT EXISTS `utilisateur` (
   `IDUtil` int(11) NOT NULL AUTO_INCREMENT,
   `NomUtil` varchar(30) NOT NULL,
@@ -140,10 +135,18 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `VilleUtil` varchar(40) NOT NULL,
   `MobilUtil` varchar(10) NOT NULL,
   `MailUtil` varchar(50) NOT NULL,
+  `LogUtil` varchar(30) NOT NULL,
   `MDPUtil` varchar(20) NOT NULL,
   `Admin` tinyint(1) NOT NULL,
   PRIMARY KEY (`IDUtil`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Contenu de la table `utilisateur`
+--
+
+INSERT INTO `utilisateur` (`IDUtil`, `NomUtil`, `PnomUtil`, `RueUtil`, `CPUtil`, `VilleUtil`, `MobilUtil`, `MailUtil`, `LogUtil`, `MDPUtil`, `Admin`) VALUES
+(1, 'azer', 'azer', 'azer', '12345', 'azer', 'azer', 'azer', 'azer', 'azer', 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
